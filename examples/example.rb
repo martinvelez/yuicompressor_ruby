@@ -7,7 +7,7 @@ input = ARGF.read
 # Otherwise, you must pass the engine's executable path to the class's 
 # constructor.
 # For example:
-# engine = YUICompressor.new({:command => "/path/to/engine"})
+# engine = YUICompressor.new({:engine => "/path/to/engine"})
 engine = YUICompressor.new
 
 output, errors, status = engine.obfuscate(input)
