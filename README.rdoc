@@ -1,0 +1,72 @@
+= yuicompressor_ruby -- YUI Compressor wrapped in Ruby
+
+== Table of Contents
+1. Introduction
+2. Dependencies
+3. Installation
+4. Usage
+5. Development
+
+== 1. Introduction
+
+This is a Ruby wrapper for the obfuscation engine 
+{YUI Compressor}[http://yuilibrary.com/projects/yuicompressor/].
+
+The {YUI Compressor}[http://yuilibrary.com/projects/yuicompressor/]
+engine has a command line interface.  This wrapper allows you to use the
+obfuscation engine within your Ruby scripts.  
+
+== 2. Dependencies
+
+* {Ruby 1.9.2}[http://www.ruby-lang.org/en/downloads/] or greater
+* {YUI Compressor}[http://yuilibrary.com/projects/yuicompressor/]
+  (v2.4.7 is include in this gem's ext folder)
+  * Java ( >= 1.5 )
+
+== 3. Installation
+
+=== Rubygems:
+You might need to use sudo.
+ gem install yuicompressor_ruby
+
+=== Not Rubygems:
+1. Download yuicompressor_ruby[http://bitbucket.org/martinvelez/yuicompressor_ruby/downloads]
+2. Require the YUICompressor Ruby class file in your program (lib folder) 
+   * YUI Compressor is located in this gems <b>ext</b> folder.
+
+== 4. Usage
+
+=== Example 1
+This example is found in the examples directory.
+ #!/usr/bin/env ruby
+
+ require 'yuicompressor'
+
+ input = ARGF.read
+ # Assuming engine is installed in this gem's "ext" folder.
+ # Otherwise, you must pass the engine's executable path to the class's 
+ # constructor.
+ # For example:
+ # engine = YUICompressor.new({:command => "/path/to/engine"})
+ engine = YUICompressor.new
+
+ output, errors, status = engine.obfuscate(input)
+
+ puts "STATUS:", status
+ puts "ERRORS: ", errors
+ puts "OUTPUT:", output
+
+
+== 5. Development
+
+Author:: {Martin Velez}[http://www.martinvelez.com]
+Copyright:: Copyright (C) 2012 {Martin Velez}[http://www.martinvelez.com]
+License:: GPL[http://www.gnu.org/copyleft/gpl.html]
+
+=== Source
+Bitbucket[https://bitbucket.org/martinvelez/yuicompressor_ruby/src] is hosting this code.
+ http://bitbucket.org/martinvelez/w32evol_ruby/src
+
+=== Issues and Bug Reports
+Provide feedback, get help, request features, and reports bugs here:
+ https://bitbucket.org/martinvelez/yuicompressor_ruby/issues?status=new?status=open
