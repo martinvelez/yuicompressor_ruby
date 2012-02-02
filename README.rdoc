@@ -71,8 +71,11 @@ Bitbucket[https://bitbucket.org/martinvelez/yuicompressor_ruby/src] is hosting t
 Provide feedback, get help, request features, and reports bugs here:
  https://bitbucket.org/martinvelez/yuicompressor_ruby/issues?status=new?status=open
 
-=== YUI
-The YUI Compressor in included in this gem's <b>ext</b> folder.
+=== YUI Compressor
+The YUI Compressor project was downloaded, extracted, and included in this 
+gem's <b>ext</b> folder.
 
+Version:: 2.4.7[http://yuilibrary.com/download/yuicompressor/]
 Home:: http://yuilibrary.com/projects/yuicompressor/
 YUI Compressor License:: BSD[http://yuilibrary.com/license/]
+
