@@ -32,6 +32,7 @@ class YUICompressor
 	#  String: output, errors
 	#  Integer: exitstatus
 	#  obfuscate(input) => output, errors, exitstatus
+	#
 	def obfuscate(input)
 		output, errors, exitstatus = "", "", 0
 		
@@ -63,8 +64,6 @@ class YUICompressor
 		# This method converts the options Hash into a string of flags for the 
 		# command line call.
 		#
-		# Example output:
-		#  "--x cpp --x iso --x motif --x posix2 --x stl --x unix95 --x xpg4" 
 		def generate_command_options
 			command_options = ""
 			@options.each do |key, value|
