@@ -6,6 +6,7 @@
 3. Installation
 4. Usage
 5. Development
+6. YUI Compressor
 
 == 1. Introduction
 
@@ -71,7 +72,7 @@ Bitbucket[https://bitbucket.org/martinvelez/yuicompressor_ruby/src] is hosting t
 Provide feedback, get help, request features, and reports bugs here:
  https://bitbucket.org/martinvelez/yuicompressor_ruby/issues?status=new?status=open
 
-=== YUI Compressor
+== 6. YUI Compressor
 The YUI Compressor project was downloaded, extracted, and included in this 
 gem's <b>ext</b> folder.
 
