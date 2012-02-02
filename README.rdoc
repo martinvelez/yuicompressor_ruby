@@ -21,7 +21,7 @@ obfuscation engine within your Ruby scripts.
 * {Ruby 1.9.2}[http://www.ruby-lang.org/en/downloads/] or greater
 * {YUI Compressor}[http://yuilibrary.com/projects/yuicompressor/]
   (v2.4.7 is include in this gem's ext folder)
-  * Java ( >= 1.5 )
+  * {Java}[http://www.java.com/en/download/manual.jsp?locale=en] ( >= 1.5 )
 
 == 3. Installation
 
@@ -70,3 +70,9 @@ Bitbucket[https://bitbucket.org/martinvelez/yuicompressor_ruby/src] is hosting t
 === Issues and Bug Reports
 Provide feedback, get help, request features, and reports bugs here:
  https://bitbucket.org/martinvelez/yuicompressor_ruby/issues?status=new?status=open
+
+=== YUI
+The YUI Compressor in included in this gem's <b>ext</b> folder.
+
+Home:: http://yuilibrary.com/projects/yuicompressor/
+YUI Compressor License:: BSD[http://yuilibrary.com/license/]
