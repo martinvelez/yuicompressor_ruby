@@ -88,7 +88,9 @@ class YUICompressor
 		end
 
 		def generate_command
-			if PLATFORM == 'java'
+			if PLATFORM == 'windows'
+				return "wine #{@options[:engine]}" if RUBY_PLATFORM =~ /linux/
+			elsif PLATFORM == 'java'
 				return "java -jar #{@options[:engine]}"
 			end
 			return @options[:engine]
